@@ -54,6 +54,17 @@ h3{
     font-style: italic;
 }
 
+.disclaimer {
+    background-color: rgb(142, 45, 45);
+    overflow: hidden;
+    font-family: ofelia-display, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
 .topnav a {
 float: left;
 color: #f2f2f2;
