@@ -42,7 +42,7 @@ jobs:
           npm install
           npm run-script build
         env:
-          TEST_SECRET: ${{ secret.TEST_SECRET }}
+          TEST_SECRET: ${{ secrets.TEST_SECRET }}
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
