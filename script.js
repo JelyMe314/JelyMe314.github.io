@@ -69,7 +69,7 @@ function setMorph(fraction) {
 function doCooldown() {
 	morph = 0;
 	
-	print(${{TEST_SECRET}})
+	print(${{ TEST_SECRET }})
 
 	elts.text2.style.filter = "";
 	elts.text2.style.opacity = "100%";
