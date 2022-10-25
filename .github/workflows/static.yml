@@ -37,8 +37,10 @@ jobs:
         with:
           # Upload entire repository
           path: '.'
+      - name: Testing
         env:
           TEST_SECRET: ${{ secrets.TEST_SECRET }}
+        run: echo "$TEST_SECRET"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
