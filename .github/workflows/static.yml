@@ -37,8 +37,8 @@ jobs:
         with:
           # Upload entire repository
           path: '.'
-        env:
-          TEST_SECRET: ${{ secrets.TEST_SECRET }}
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
+        env:
+          TEST_SECRET: ${{ secrets.TEST_SECRET }}
