@@ -4,6 +4,8 @@
 
 import { TOKEN } from 'config.js'
 
+print(TOKEN)
+
 if (window.innerWidth / window.innerHeight < 1){
     alert("This website is designed for desktop viewing, please rotate to horizontal or view on a computer.")
 }
