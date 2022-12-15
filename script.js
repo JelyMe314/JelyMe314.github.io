@@ -1,11 +1,6 @@
 /*
 	This pen cleverly utilizes SVG filters to create a "Morphing Text" effect. Essentially, it layers 2 text elements on top of each other, and blurs them depending on which text element should be more visible. Once the blurring is applied, both texts are fed through a threshold filter together, which produces the "gooey" effect. Check the CSS - Comment the #container rule's filter out to see how the blurring works!
 */
-
-import TOKEN from './config.js'
-
-console.log(TOKEN)
-
 if (window.innerWidth / window.innerHeight < 1){
     alert("This website is designed for desktop viewing, please rotate to horizontal or view on a computer.")
 }
