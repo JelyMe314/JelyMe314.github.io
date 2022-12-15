@@ -5,7 +5,7 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
 	get: (searchParams, prop) => searchParams.get(prop),
   });
 
-print(params.code);
+console.log(params.code);
 
 const elts = {
 	text1: document.getElementById("carousel1"),
