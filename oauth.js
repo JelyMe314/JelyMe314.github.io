@@ -4,4 +4,4 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
 
 console.log(params.code);
 const idElem = document.getElementById("code");
-idElem.innerHTML = "Thank You! One last step, send the bot this code to finish linking:\n<i>" + params.code + "</i>";
+idElem.innerHTML = "Thank You! One last step, send the bot this code to finish linking:\n<em>" + params.code + "</em>";
