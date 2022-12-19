@@ -3,5 +3,5 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
   });
 
 console.log(params.code);
-print(document.getElementById("code"));
+console.log(document.getElementById("code"));
 document.getElementById("code").innerText = params.code;
