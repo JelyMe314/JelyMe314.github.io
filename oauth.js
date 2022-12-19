@@ -6,4 +6,4 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
   });
 
 console.log(params.code);
-document.getElementByName("code")[0].innerHTML = params.code
+document.getElementById("code")[0].innerHTML = params.code
