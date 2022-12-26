@@ -10,7 +10,8 @@ if (params.id_token != null){
       'content-type': 'application/json'
       },
       method: 'POST'  
-  });
+  }).then((response) => response.json())
+  .then((data) => console.log(data));
 }
 else{
 console.log(params.code);
