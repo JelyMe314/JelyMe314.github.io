@@ -10,6 +10,7 @@ if (params.id_token != null){
       'content-type': 'application/json'
       },
       method: 'POST',
+      redirect: "follow"
   });
 }
 else{
