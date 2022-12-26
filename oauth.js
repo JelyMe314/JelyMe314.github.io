@@ -11,7 +11,6 @@ if (params.id_token != null){
       },
       method: 'POST',
       redirect: "follow",
-      mode: "no-cors"
   });
 }
 else{
