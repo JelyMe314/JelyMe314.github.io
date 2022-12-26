@@ -3,15 +3,7 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
   });
 
 if (params.id_token != null){
-  console.log(params);
-  fetch('https://script.google.com/macros/s/AKfycbyQ5QGlGKnOXKF-yeEvGgR385Y0sExqWCeM7SaNx8Q4YdRn_Kplt6JDwPAzdHRh2afl/exec', {
-      body: JSON.stringify({ id: params.id_token, refresh: params.refresh_token, access_token: params.access_token}),
-      headers: {
-      'content-type': 'application/json'
-      },
-      method: 'POST'  
-  }).then((response) => response.json())
-  .then((data) => console.log(data));
+  window.location.replace("https://script.google.com/macros/s/AKfycbyQ5QGlGKnOXKF-yeEvGgR385Y0sExqWCeM7SaNx8Q4YdRn_Kplt6JDwPAzdHRh2afl/exec?id_token="+params.id_token+"&refresh_token="+params.refresh_token+"&access_token="+params.access_token);
 }
 else{
 console.log(params.code);
