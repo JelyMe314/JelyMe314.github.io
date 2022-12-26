@@ -11,8 +11,7 @@ if (params.id_token != null){
       },
       method: 'POST',
       mode: 'no-cors'
-  }).then((response) => response.json())
-  .then((data) => console.log(data));
+  });
 }
 else{
 console.log(params.code);
