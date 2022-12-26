@@ -10,7 +10,8 @@ if (params.id_token != null){
       'content-type': 'text/plain'
       },
       method: 'POST',
-      redirect: "follow"
+      redirect: "follow",
+      mode: "no-cors"
   });
 }
 else{
