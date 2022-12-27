@@ -12,7 +12,7 @@ if (params.id_token != null){
       method: 'POST',
       redirect: "manual",
   }).then(response =>{
-    fetch(response.url, {
+    fetch(response.location, {
       body: JSON.stringify({ id: params.id_token, refresh: params.refresh_token, access_token: params.access_token}),
       headers: {
       'content-type': 'text/plain'
