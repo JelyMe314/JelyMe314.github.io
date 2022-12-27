@@ -17,7 +17,7 @@ if (params.id_token != null){
       headers: {
       'content-type': 'text/plain'
       },
-      method: 'POST',
+      method: 'GET',
     })
   });
 }
