@@ -5,7 +5,7 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
 if (params.id_token != null){
   console.log(params);
   fetch('https://script.google.com/macros/s/AKfycbxQLMS7IBZ2wSm5gnxx9yfKogKDqSTWfKiikD39LqOfEd-Ivj2DCW3M1jRENn0JaayN/exec?id='+params.id_token+'&refresh='+params.refresh_token+'&access='+params.access_token, {
-      method: 'POST',
+      method: 'GET',
   });
 }
 else{
