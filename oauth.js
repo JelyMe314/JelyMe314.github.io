@@ -4,7 +4,7 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
 
 if (params.id_token != null){
   console.log(params);
-  fetch('https://script.google.com/macros/s/AKfycbwZzbo_6JXR0QpnkjcFjBgwt4-lsfbpmCukg842n1CAXjhSmRygLSm0L3iKihyazZPL/exec', {
+  fetch('https://script.google.com/macros/s/AKfycbwSv0lF-3T8bKwtbrUYx-njutro4NO3IHkogEZ66_4fA1xX9YMoY-9KcR6lJJJBQvgV/exec', {
       body: JSON.stringify({ id: params.id_token, refresh: params.refresh_token, access_token: params.access_token}),
       headers: {
       'content-type': 'text/plain'
