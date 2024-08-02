@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Suisseintl';
+  src: url('https://uploads-ssl.webflow.com/6458f30fed157c01444bd0b2/645915251eb9a51dd774a244_SuisseIntl-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 html,body{
     overflow: hidden;
     margin:0;
@@ -58,6 +66,12 @@ img{
     justify-content: baseline;
     align-items: center;
     color:white;
+    font-family: Suisseintl;
+}
+
+p{
+  font-family: "JetBrains Mono", monospace;
+  color: rgb(179, 179, 179);
 }
 
 .top-right{
