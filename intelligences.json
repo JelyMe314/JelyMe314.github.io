@@ -1,0 +1,14 @@
+{
+    "Verbal-Linguistic":{
+        "ImageSrcs":["0.png","1.png","2.png"],
+        "Text":"A whole bunch of text"
+    },
+    "Visual-Spatial":{
+        "ImageSrcs":["0.png","1.png","2.png"],
+        "Text":"Number two"
+    },
+    "Logical-Mathematical":{
+        "ImageSrcs":["https://startalkmedia.com/wp-content/uploads/2023/05/neil-degrasse-tyson.jpg","https://startalkmedia.com/wp-content/uploads/2016/05/bill-nye.jpg","https://assets-prd.ignimgs.com/2020/09/30/young-sheldon-button-1601480091105.jpg","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgehzgBdRiS_08Q3n5-QF0u20LqIdPAAUG9w&s"],
+        "Text":"The best website you've ever seen"
+    }
+}
