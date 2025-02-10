@@ -1,3 +1,4 @@
 document.onclick = function() {
-    alert("You clicked on the page!");
+    document.body.id = 'leave';
+    setTimeout(() => window.location.pathname = '/learn-more', 1000);
 }
