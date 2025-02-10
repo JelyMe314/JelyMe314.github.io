@@ -79,7 +79,7 @@ body{
     bottom: -100px;
     width: 115vw;
     height: 25vh;
-    transform: rotate(-5deg) translate(0px, 0px);
+    transform: rotate(-5deg) translate(5vw, 0px);
     padding-top: 25px;
     padding-bottom: 25px;
     display: flex;
