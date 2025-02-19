@@ -124,6 +124,7 @@ body{
     transform: translate(0px, 0px);
     animation: slide 5s infinite linear reverse;
     position: relative;
+    object-fit: cover;
 }
 
 @keyframes slide {

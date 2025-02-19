@@ -62,10 +62,13 @@ body{
     animation: fadeIn 1s 0.5s forwards ease-out;
 }
 
-#left img{
+#left #img{
     width: calc(100% - 50px);
     height: calc(100% - 50px);
     border-radius: 50px;
+    background: url("carousel/hero.webp");
+    background-position: center center;
+    background-size: cover;
 }
 
 #right{
